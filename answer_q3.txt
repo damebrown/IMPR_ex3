@@ -1,0 +1,8 @@
+Q3: What happens (and why this happens) to the result blending from section 4 image when blending is performed
+with a varying number of pyramid levels (max_levels = 1,2,3,4,5,...)?
+
+The number of iterations in the blending process is equal to max_levels (or smaller, depends on whether the max_level
+level in the pyramid is bigger than 16 on 16 pixels). The larger max_levels is, the more profound the blending process
+is getting- each iteration we 'dissolve' the two images into each other by blurring and expanding and then multiplying
+by the mask. This is the reason why the bigger max_levels is -> the more iterations of blurring and dissolving the
+images into each other -> the more successful the blending process will be.

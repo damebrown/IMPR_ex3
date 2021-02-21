@@ -1,0 +1,8 @@
+Q3: What happens (and why this happens) to the result blending is performed with different image filters
+(filter_size_im = 1,3,5,7...)?
+
+The bigger filter_size_im is, the bigger the blurring gaussian filter is. The gaussian filter is used
+in the blurring process which we apply on the photo while expanding and reducing the image. The blurring is
+the process giving the pyramid blending the smooth passing between each of the original photo's area.
+This is why the larger the filter_size_im is, the larger the gaussian filter is, the bigger the area each blurring is
+active upon, and the bigger and smoother blending area in the blended image.

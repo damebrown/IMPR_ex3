@@ -1,0 +1,7 @@
+Q1: What does it mean to multiply each level in a different value? What do we try to control on?
+By multiplying each level in a different coefficient we gain control upon the significance of each level.
+Each level in a laplacian pyramid is built by subtracting the blurred-reduced-expanded image from the
+original image. We can look at the blur-reduce-expand process as a high pass filter of the image's frequencies.
+And this is why each level in the pyramid is an image of the low frequqncies of the level before it.
+This is why multiplying by different coefficients allows us to control the intensity of each frequency in the blended
+image.
